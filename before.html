@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>before in css</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      align-items: center;
+      font-family: 'opens sans', sans-serif;
+    }
+
+    div {
+      width: 200px;
+      height: 100px;
+      background-color: rgb(102, 102, 102, );
+      text-align: center;
+      border: 2px solid black;
+      padding-top: 10px;
+      opacity: 0.8;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    h1:hover {
+      color: transparent;
+    }
+
+    h1::before {
+      content: "divin";
+      text-transform: capitalize;
+      color: transparent;
+      position: absolute;
+      font-size: 35px;
+    }
+
+    h1:hover::before {
+      color: rgb(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>GAKIZA</h1>
+  </div>
+</body>
+
+</html>
